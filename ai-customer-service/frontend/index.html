@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stuffsus - AI Customer Service</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Stuffsus</a>
+            <nav class="nav-links">
+                <a href="#">Beranda</a>
+                <a href="#">Shop</a>
+                <a href="#">Blog</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="hero">
+            <h1>Give All You Need</h1>
+            <p>Your one-stop shop for the best tech and gadgets.</p>
+        </div>
+
+        <section class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8SGVhZHBob25lc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600" alt="Headphones">
+                </div>
+                <h3>Headphones</h3>
+                <div class="product-rating">⭐ 5.0 (1.2k Reviews)</div>
+                <div class="product-price">$12.00</div>
+                <div class="product-buttons">
+                    <button class="btn btn-secondary">Add to Cart</button>
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1549109926-58f039549485?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" alt="CCTV Camera">
+                </div>
+                <h3>CCTV Maling</h3>
+                <div class="product-rating">⭐ 4.8 (120 Reviews)</div>
+                <div class="product-price">$50.00</div>
+                <div class="product-buttons">
+                    <button class="btn btn-secondary">Add to Cart</button>
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                 <div class="product-image-container">
+                    <img src="https://plus.unsplash.com/premium_photo-1729006559482-d289e4385b1e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1112" alt="Robot Cleaner">
+                </div>
+                <h3>Adudu Cleaner</h3>
+                <div class="product-rating">⭐ 4.4 (1k Reviews)</div>
+                <div class="product-price">$29.90</div>
+                <div class="product-buttons">
+                    <button class="btn btn-secondary">Add to Cart</button>
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- CHAT WIDGET -->
+    <div class="chat-widget">
+        <div class="chat-header">
+            <div class="header-content">
+                <span class="online-dot"></span>
+                Stuffsus Support
+            </div>
+            <!-- FIXED: Added the close button -->
+            <button class="chat-close-btn" id="chat-close-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <div class="chat-message bot">
+                <p>Hello! How can I help you with your order?</p>
+            </div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="chat-input" placeholder="Ask a question...">
+            <button id="send-btn">➤</button>
+        </div>
+    </div>
+
+    <!-- The floating button to toggle the chat widget -->
+    <button class="chat-toggle-btn" id="chat-toggle-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+    </button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
